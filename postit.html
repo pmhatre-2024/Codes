@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Patrick Hand|Audiowide">
+<style>
+    body {
+     margin: 80px;
+     background-color: #15161d;
+    }
+    .con {
+        border: 5px solid #65ecb8;
+    }
+    .container {
+        height: 60px;
+        position: relative;
+    }
+    .container2 { 
+        margin-top: 30px;
+        border: 5px solid #65ecb8;
+        height: 180px;
+        position: relative;
+    }
+    .center {
+        margin: 0;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+    }
+    .center1 {
+        margin: 0;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -ms-transform: translateX(-50%);
+        transform: translateX(-50%);
+    }
+    .largeText {
+        font-family: "Courier New", monospace;
+        font-size: 60px;
+        color: #FFFFFF;
+        text-align: center;
+        line-height: 0;
+        -ms-transform: translateY(-40%);
+        transform: translateY(-40%);
+    }
+    .d {
+        font-family: "Audiowide", monospace;
+        font-size: 30px;
+        color: #1815b6;
+        text-align: center;
+    }
+    .pe {
+        font-family: "Courier New", monospace;
+        font-size: 17px;
+        color: #FFFFFF;
+        
+    }
+    .pe2 {
+        font-family: "Courier New", monospace;
+        color: #FFFFFF;
+        margin: 30px;
+    }  
+    .container3 {
+        margin-top: 30px;
+        display: flex;
+    }
+    .container4 {
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+    img {
+        max-width: 100%;
+        max-height:100%;
+    }
+</style>
+<title>Charger Contributer</title>
+<script href="images/myicon.ico" crossorigin="anonymous"></script>
+    <link rel="icon" type="image/x-icon" href="images/myicon.ico">
+    <script type="text/javascript">
+        function postPreview(){
+            location.href = 'home.html';
+        }
+    </script>
+        
+</head>
+
+<body>
+<div class="con">
+    <div class="container">
+        <div class="center">
+            <button class="d" type="button" style="background-color:#65ecb8;width:200;height:70" onclick="location.href = 'home.html';">Browse Events</button>
+            <button class="d" type="button" style="background-color:#65ecb8;width:200;height:70" onclick="location.href = 'postit.html';">Organize an Event</button>
+            <button class="d" type="button" style="background-color:#65ecb8;width:200;height:70" onclick="location.href = 'about.html';">About</button>
+            <!--<button class="d" type="button" style="background-color:#65ecb8;width:200;height:70" onclick="location.href = 'signup.html';">Create an Account</button>-->
+        </div>
+    </div>
+    <h2 class="largeText">Create Event Post</h2>
+</div>
+
+<div class="pe2">
+    <div class="container">
+        <div class="center1">
+            <label for="titulo">Volunteering Job:</label><br>
+            <input type="text" id="titulo" name="titulo" maxlength="50" size="50"><br>
+            <label for="jname">Job Description:</label><br>
+            <input type="text" id="jname" name="jname" size="50" maxlength="400"><br>
+            <label for="city">City:</label><br>
+            <input type="text" id="city" name="city" maxlength="50" size="50"><br>
+            <label for="state">State:</label><br>
+            <input type="text" id="state" name="state" maxlength="50" size="50"><br>
+            <label for="datea">Date and Time (YYYYMMDDTTTT):</label><br>
+            <input type="number" id="datea" name="datea" maxlength="12" size="50"><br>
+            <label for="phonenum">Phone Number:</label><br>
+            <input type="text" id="phonenum" name="phonenum" maxlength="15" size="50"><br>
+            <label for="orgname">Name:</label><br>
+            <input type="text" id="orgname" name="orgname" maxlength="50" size="50"><br>
+            <label for="picture">Image:</label><br>
+            <input type="file" id="picture" name="picture">
+            
+            <button id="subbutton" class="pe" type="button" style="background-color:#65ecb8;border: 4px;" onclick="submitPost(); postPreview();">Create Post</button>
+        </div>
+    </div>
+</div>
+<script src="posting.js"></script>
+
+
+
+
+<!--<P id="demo" class="pe">ARE YOU KIDDING ME YOU ACTUAL weirdo</P> -->
+
+
+</body>
+</html> 

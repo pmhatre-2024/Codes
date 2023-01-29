@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Patrick Hand|Audiowide">
+<style>
+    body {
+     margin: 80px;
+     background-color: #15161d;
+    }
+    .d {
+        font-family: "Audiowide", monospace;
+        font-size: 30px;
+        color: #1815b6;
+        text-align: center;
+    }
+    .con {
+        border: 5px solid #65ecb8;
+    }
+    .container {
+        margin-top: 40px;
+        height: 60px;
+        position: relative;
+    }
+    .container2 { 
+        margin-top: 30px;
+        border: 5px solid #65ecb8;
+        height: 180px;
+        position: relative;
+    }
+    .center {
+        margin: 0;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+    }
+    .largeText {
+        font-family: "Courier New", monospace;
+        font-size: 60px;
+        color: #FFFFFF;
+        text-align: center;
+        line-height: 0.2;
+    }
+    
+    .pe {
+        font-family: "Patrick Hand", monospace;
+        font-size: 30px;
+        color: #FFFFFF;
+        
+    }  
+    .pe2 {
+        font-family: "Patrick Hand", monospace;
+        font-size: 50px;
+        color: #FFFFFF;
+        
+    }  
+    .container3 {
+        margin-top: 30px;
+        display: flex;
+    }
+    .container4 {
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+    img {
+        max-width: 100%;
+        max-height:100%;
+    }
+</style>
+    <title>Charger Contributer</title> 
+    <script src="posting.js"></script>
+    </script>
+    <script type="text/javascript">
+        function openPostit(){
+            location.href = 'postit.html';
+            webSetup();
+            makePosts();
+        }
+
+        function openHome(){
+            location.href = 'home.html';
+            webSetup();
+            makePosts();
+        }
+    </script>
+    <script href="images/myicon.ico" crossorigin="anonymous"></script>
+    <link rel="icon" type="image/x-icon" href="images/myicon.ico">
+</head>
+
+<body>
+<div class="con">
+    
+    <h2 class="largeText">About Our Mission</h2>
+</div>
+
+<div class="container3">
+    <div class="image">
+        <img src="images/volunteering_image.jpg">
+    </div>
+    <div class="container4">
+        <p class="pe">Our platform is built to promote community service and helping others. Our mission is to allow users to find and post local opportunities for volunteer work.</p>
+        <p class="pe"> Without a way to find volunteering opportunities, people are often turned away from volunteering. <br> By using the power of the internet to bring together organizers and volunteers, we are bound to improve the world one step at a time. </p>
+        </div>
+
+</div>
+<div class="container">
+        <div class="center" >
+            <button class="d" type="button" style="background-color:#65ecb8;width: 400px;height: 80px" onclick="openHome();">Browse Events</button>
+            <button class="d" type="button" style="background-color:#65ecb8;width: 400px;height: 80px" onclick="openPostIt();">Organize an Event</button>
+            
+        </div>  
+    </div>
+</body>
+</html> 
